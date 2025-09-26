@@ -1,0 +1,54 @@
+﻿---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Arc^ Safety Primer" description="Understand Arc^ Initiative safety expectations for plasma-activated water experiments: risk layers, compliance reminders, and future assessment templates.">
+  <section class="mx-auto max-w-4xl px-6 py-20">
+    <p class="text-sm uppercase tracking-[0.4em] text-[#ffb703]">Safety first</p>
+    <h1 class="mt-3 text-4xl font-semibold">Respect the plasma. Respect the people.</h1>
+    <p class="mt-6 text-lg text-muted">
+      Arc^ Initiative treats safety as a core deliverable. Every protocol and build publishes guidance for two audiences: curious makers who need plain-language guardrails, and trained practitioners who require formal risk assessments.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-6 pb-16">
+    <div class="grid gap-10 md:grid-cols-2">
+      <div class="space-y-4 rounded-3xl border border-[#ffb703]/30 bg-[#ffb703]/10 p-6 text-sm text-[#ffeec7]">
+        <h2 class="text-xl font-semibold text-white">Layer 1 — Accessible guidance</h2>
+        <p>
+          Every project page begins with a high-level safety briefing explaining hazards, PPE, environmental concerns, and facility requirements. Think of it as a human mentor making sure you know what you are about to energise.
+        </p>
+        <ul class="list-disc space-y-2 pl-5">
+          <li>Plain-language hazard summaries</li>
+          <li>Minimum PPE and infrastructure checklist</li>
+          <li>“Do not attempt at home” scenarios clearly marked</li>
+        </ul>
+      </div>
+      <div class="space-y-4 rounded-3xl border border-white/20 bg-white/5 p-6 text-sm text-muted">
+        <h2 class="text-xl font-semibold text-white">Layer 2 — Formal risk assessment</h2>
+        <p>
+          Arc^ publishes downloadable risk assessment templates referencing local standards. We log voltage classes, plasma exposure limits, chemical by-products, and mitigation controls for labs and supervisors to review.
+        </p>
+        <p class="text-xs uppercase tracking-[0.4em] text-muted">Templates in development</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-6 pb-20">
+    <div class="space-y-6">
+      <div>
+        <h2 class="text-2xl font-semibold text-white">Compliance reminders</h2>
+        <p class="mt-4 text-muted">
+          Plasma research intersects electrical, chemical, and biological regulations. You must comply with the laws of your jurisdiction. Arc^ cannot authorise experiments that violate facility or government rules.
+        </p>
+      </div>
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-6 text-sm text-muted">
+        <h3 class="text-lg font-semibold text-white">If you’re a student</h3>
+        <ul class="mt-3 list-decimal space-y-3 pl-6">
+          <li>Share this safety primer with your supervisor before beginning any build.</li>
+          <li>Document risk controls in your institutional forms and send them back to Arc^ for transparency.</li>
+          <li>Log incidents immediately using the contact form so the community can learn and adapt.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

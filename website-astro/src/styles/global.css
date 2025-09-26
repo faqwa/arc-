@@ -1,0 +1,87 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* visual defaults */
+:root {
+  --bg: #06101a;
+  --surface: rgba(12, 24, 38, 0.9);
+  --fg: #f3f7f9;
+  --muted: #9fb6c2;
+  --accent: #0a9396;
+  --accent-soft: rgba(10, 147, 150, 0.16);
+  --highlight: #94d2bd;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(circle at top, rgba(10, 147, 150, 0.12), transparent 50%),
+              radial-gradient(circle at bottom, rgba(148, 210, 189, 0.08), transparent 55%),
+              var(--bg);
+  color: var(--fg);
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--highlight);
+}
+
+.text-muted {
+  color: var(--muted);
+}
+
+.section-heading {
+  @apply text-3xl font-semibold tracking-tight;
+}
+
+.section-subhead {
+  @apply text-lg text-muted max-w-3xl;
+}
+
+.manifesto-bg {
+  position: absolute;
+  inset: 0;
+  filter: blur(120px);
+  opacity: 0.9;
+}
+
+.manifesto-bg--erosion {
+  background: radial-gradient(circle at 20% 30%, rgba(244, 162, 97, 0.4), transparent 55%),
+              radial-gradient(circle at 70% 70%, rgba(231, 111, 81, 0.35), transparent 60%),
+              radial-gradient(circle at 80% 20%, rgba(38, 70, 83, 0.45), transparent 70%);
+}
+
+.manifesto-bg--data {
+  background: linear-gradient(135deg, rgba(10, 147, 150, 0.45), transparent 55%),
+              radial-gradient(circle at 80% 50%, rgba(148, 210, 189, 0.35), transparent 65%),
+              radial-gradient(circle at 10% 80%, rgba(94, 96, 206, 0.3), transparent 70%);
+}
+
+.manifesto-bg--call {
+  background: radial-gradient(circle at 30% 50%, rgba(0, 95, 115, 0.5), transparent 70%),
+              radial-gradient(circle at 70% 40%, rgba(144, 210, 189, 0.4), transparent 65%),
+              radial-gradient(circle at 50% 80%, rgba(255, 183, 3, 0.35), transparent 75%);
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}

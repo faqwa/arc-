@@ -1,0 +1,16 @@
+﻿[
+  {
+    "slug": "saltwater-irrigation",
+    "title": "Saltwater Irrigation",
+    "description": "Drafting plasma-activated irrigation concepts for salt-stressed crops and coastal communities.",
+    "status": "draft",
+    "link": "/projects/saltwater-irrigation"
+  },
+  {
+    "slug": "pollutant-degradation",
+    "title": "Pollutant Degradation",
+    "description": "Exploring PAW pathways that dismantle persistent pollutants without new harm.",
+    "status": "idea",
+    "link": "/projects/pollutant-degradation"
+  }
+]

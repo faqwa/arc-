@@ -1,0 +1,32 @@
+﻿---
+import Header from '../components/Header.jsx';
+import Footer from '../components/Footer.jsx';
+import '../styles/global.css';
+const {
+  title = 'Arc^ Initiative — Restorative Plasma Research',
+  description = 'Arc^ Initiative explores plasma-activated water for ecological restoration through open, humane research.',
+} = Astro.props;
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    >
+  </head>
+  <body class="antialiased text-white selection:bg-arkup-teal selection:text-white">
+    <div class="flex min-h-screen flex-col">
+      <Header />
+      <main class="flex-grow">
+        <slot />
+      </main>
+      <Footer />
+    </div>
+  </body>
+</html>

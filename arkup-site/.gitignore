@@ -1,0 +1,6 @@
+﻿node_modules/
+website/node_modules/
+website/.cache/
+.DS_Store
+.env
+.build/
